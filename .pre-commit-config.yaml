@@ -20,7 +20,7 @@ repos:
     rev: v8.29.0
     hooks:
       - id: gitleaks
-        args: ["--verbose", "--no-git"]
+        args: ["--staged", "--verbose"]
 
   # General file hygiene
   - repo: https://github.com/pre-commit/pre-commit-hooks

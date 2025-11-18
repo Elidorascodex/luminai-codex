@@ -1,0 +1,53 @@
+:root {
+  --pulse-color-strong: rgba(16, 185, 129, 0.35);
+  --pulse-color-soft: rgba(14, 165, 233, 0.22);
+  --pulse-color-alert: rgba(244, 114, 182, 0.35);
+}
+
+.resonance-pulse-strong {
+  box-shadow: 0 0 30px rgba(250, 204, 21, 0.3);
+  animation: resonancePulseStrong 2.4s infinite;
+}
+
+.resonance-pulse-soft {
+  box-shadow: 0 0 30px rgba(8, 145, 178, 0.25);
+  animation: resonancePulseSoft 3s infinite;
+}
+
+.resonance-pulse-alert {
+  box-shadow: 0 0 30px rgba(248, 113, 113, 0.35);
+  animation: resonancePulseAlert 1.4s infinite;
+}
+
+@keyframes resonancePulseStrong {
+  0% {
+    box-shadow: 0 0 0 0 var(--pulse-color-strong);
+  }
+  70% {
+    box-shadow: 0 0 20px 15px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+@keyframes resonancePulseSoft {
+  0% {
+    box-shadow: 0 0 0 0 var(--pulse-color-soft);
+  }
+  100% {
+    box-shadow: 0 0 18px 12px transparent;
+  }
+}
+
+@keyframes resonancePulseAlert {
+  0% {
+    box-shadow: 0 0 0 0 var(--pulse-color-alert);
+  }
+  60% {
+    box-shadow: 0 0 16px 10px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
