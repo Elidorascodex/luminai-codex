@@ -51,6 +51,7 @@ dist/
 venv/
 .venv/
 env/
+.venv-pdf/
 
 # Windows Zone.Identifier sidecars (download metadata)
 *.pdf:Zone.Identifier
