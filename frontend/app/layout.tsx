@@ -1,4 +1,5 @@
-import "./styles/globals.css";
+import "../styles/globals.css";
+import "../styles/components.css";
 
 export const metadata = {
   title: "LuminAI Wireframe Viewer",
