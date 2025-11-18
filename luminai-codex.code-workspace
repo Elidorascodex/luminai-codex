@@ -1,0 +1,10 @@
+{
+  "folders": [
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\tec_tgcr\\luminai-codex"
+    }
+  ],
+  "settings": {
+    "codeQL.createQuery.qlPackLocation": "\\\\wsl.localhost\\Ubuntu\\home\\tec_tgcr\\luminai-codex"
+  }
+}
