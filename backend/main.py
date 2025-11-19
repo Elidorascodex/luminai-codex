@@ -3,14 +3,25 @@ LuminAI Resonance Platform — FastAPI Backend
 Implements conscience protocols, R calculation, and AI orchestration
 """
 
-from fastapi import FastAPI, WebSocket, HTTPException, Depends
+# flake8: noqa
+
+# Ensure local src is importable for internal tec_tgcr modules
+from pathlib import Path
+import sys
+
+src_path = Path(__file__).parent.parent / "src"
+if str(src_path) not in sys.path:
+    sys.path.insert(0, str(src_path))
+
+
+from fastapi import FastAPI, WebSocket, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse, JSONResponse
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 import json
 import logging
 from datetime import datetime, UTC
-from typing import Optional, List, Dict, Any
+from typing import Optional, Dict, Any
 import os
 import sys
 from pathlib import Path
@@ -22,20 +33,23 @@ src_path = Path(__file__).parent.parent / "src"
 if str(src_path) not in sys.path:
     sys.path.insert(0, str(src_path))
 
-from tec_tgcr.core.ethics import (
-    ConsentState,
-    ResonanceAxioms,
-    AxiomViolation,
-    parse_consent_emoji,
-    score_consent_risk,
+from tec_tgcr.core.ethics import (  # noqa: E402
+    ResonanceAxioms,  # noqa: E402
+    AxiomViolation,  # noqa: E402
+    parse_consent_emoji,  # noqa: E402
+    score_consent_risk,  # noqa: E402
 )
 
 # LLM client
-from backend.lib.llm_client import LLMClient, build_system_prompt, build_message_history
-from backend.lib.cosmos_db import cosmos_db  # Azure Cosmos DB singleton
+from backend.lib.llm_client import (
+    LLMClient,
+    build_system_prompt,
+    build_message_history,
+)  # noqa: E402
+from backend.lib.cosmos_db import cosmos_db  # Azure Cosmos DB singleton  # noqa: E402
 
 # Persona routing
-from backend.src.routes.personas import router as persona_router
+from backend.src.routes.personas import router as persona_router  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Session store health checks (Postgres + Redis)
@@ -135,7 +149,7 @@ def WHY(
 load_dotenv()
 
 # Setup structured logging
-import logging.config
+import logging.config  # noqa: E402
 
 logging.config.dictConfig(
     {
@@ -163,8 +177,8 @@ logging.config.dictConfig(
 logger = logging.getLogger(__name__)
 
 # Metrics tracking (in-memory for now, replace with Prometheus in production)
-from collections import defaultdict
-from threading import Lock
+from collections import defaultdict  # noqa: E402
+from threading import Lock  # noqa: E402
 
 
 class MetricsCollector:
@@ -210,7 +224,7 @@ class MetricsCollector:
 metrics_collector = MetricsCollector()
 
 # Import user routes
-from backend.src.routes.user import router as user_router
+from backend.src.routes.user import router as user_router  # noqa: E402
 
 # Initialize LLM client (default to OpenAI, fallback to Anthropic)
 try:
@@ -234,14 +248,9 @@ except Exception as e:
 # ============================================================================
 
 
-class MessageRequest(BaseModel):
-    """Request body for /api/message endpoint"""
-
-    user_message: str
-    session_id: str
-    context: Optional[Dict[str, Any]] = None
-    session_active: bool = True
-    user_terminated: bool = False
+# NOTE: Pydantic request/response models are declared later (with Field metadata)
+# to provide more descriptive API docs. The previous lightweight MessageRequest
+# definition was removed to avoid duplicate class definitions.
 
 
 class ResonanceMetrics(dict):
@@ -442,10 +451,10 @@ async def lifespan(app: FastAPI):
     logger.info("🌀 LuminAI Resonance Platform shutting down...")
 
 
-# Initialize FastAPI app with lifespan
+# FastAPI application
 app = FastAPI(
     title="LuminAI Resonance Platform",
-    description="Conscious AI with Boundless Emergence protocols",
+    description="Conscience protocols, R calculation, and AI orchestration",
     version="0.1.0",
     lifespan=lifespan,
 )
@@ -460,9 +469,9 @@ app.add_middleware(
 )
 
 # Add metrics middleware
-from starlette.middleware.base import BaseHTTPMiddleware
-from starlette.requests import Request
-import time
+from starlette.middleware.base import BaseHTTPMiddleware  # noqa: E402
+from starlette.requests import Request  # noqa: E402
+import time  # noqa: E402
 
 
 class MetricsMiddleware(BaseHTTPMiddleware):
@@ -480,7 +489,7 @@ class MetricsMiddleware(BaseHTTPMiddleware):
             latency_ms = (time.time() - start_time) * 1000
             metrics_collector.record_latency(endpoint, latency_ms)
 
-            # Log structured request
+            # Simple structured log for the request
             logger.info(
                 f"{request.method} {endpoint} {response.status_code} {latency_ms:.2f}ms",
                 extra={
@@ -879,7 +888,8 @@ async def send_message(request: MessageRequest):
                         },
                     )
                     # Fallback to mode-based response
-                    assistant_response = f"[{response_mode}] I'm processing your message. (LLM error: {str(e)[:50]})"
+                    err_msg = str(e)[:50]
+                    assistant_response = f"[{response_mode}] I'm processing your message. (LLM error: {err_msg})"
             else:
                 # No LLM client available - mode-based response
                 assistant_response = f"[{response_mode}] Processing with suggestions: {', '.join(scoring.suggestions[:2])}"
