@@ -62,3 +62,14 @@ DELETE)MEAFTER
 
 # Transfer staging area (for manual review)
 _TRANSFER_STAGING/
+
+# Ignore preapply backups from docs tooling
+docs/**/*.preapply.bak-*
+*.preapply.bak-*
+
+# Detect secrets scans / baselines
+.secrets.baseline
+.secrets.scan.json
+.secrets.scan.merged.json
+.secrets.scan.out
+.secrets.scan.summary.txt
