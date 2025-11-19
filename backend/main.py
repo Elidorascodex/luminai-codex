@@ -3,28 +3,23 @@ LuminAI Resonance Platform — FastAPI Backend
 Implements conscience protocols, R calculation, and AI orchestration
 """
 
-# flake8: noqa
-
 # Ensure local src is importable for internal tec_tgcr modules
 from pathlib import Path
 import sys
+import os
+import json
+import logging
+from datetime import datetime
+from typing import Optional, Dict, Any
 
 src_path = Path(__file__).parent.parent / "src"
 if str(src_path) not in sys.path:
     sys.path.insert(0, str(src_path))
 
-
 from fastapi import FastAPI, WebSocket, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
-import json
-import logging
-from datetime import datetime, UTC
-from typing import Optional, Dict, Any
-import os
-import sys
-from pathlib import Path
 from dotenv import load_dotenv
 from contextlib import asynccontextmanager
 
