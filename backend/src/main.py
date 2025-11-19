@@ -5,16 +5,17 @@ GitHub Webhook Integration + Chat API
 
 from fastapi import FastAPI, Request, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
 from contextlib import asynccontextmanager
+from typing import Optional
 import hmac
 import hashlib
 import json
 import os
 from dotenv import load_dotenv
+from datetime import datetime
 import logging
 from routes import multi_llm, resonance_live
-from security import sanitize_log_input, sanitize_webhook_payload, validate_github_ref
+from security import sanitize_log_input, validate_github_ref
 
 load_dotenv()
 
@@ -75,15 +76,15 @@ async def process_github_push(payload: dict, background_tasks: BackgroundTasks):
     branch = sanitize_log_input(ref)
     pusher_name = sanitize_log_input(pusher.get("name"))
 
-    logger.info(f"📤 Processing push event")
-    logger.info(f"   Repository: {repo_name}")
-    logger.info(f"   Branch: {branch}")
-    logger.info(f"   Commits: {len(commits)}")
-    logger.info(f"   Pusher: {pusher_name}")
+    logger.info("📤 Processing push event")
+    logger.info("   Repository: %s", repo_name)
+    logger.info("   Branch: %s", branch)
+    logger.info("   Commits: %d", len(commits))
+    logger.info("   Pusher: %s", pusher_name)
 
     # Only process main branch (validate ref format first)
     if not validate_github_ref(ref) or ref != "refs/heads/main":
-        logger.info(f"⏭️ Skipping webhook (not main branch: {branch})")
+        logger.info("⏭️ Skipping webhook (not main branch: %s)", branch)
         return {"status": "skipped", "reason": "not-main-branch"}
 
     # Extract changed files
@@ -139,6 +140,7 @@ async def update_github_pages(
     safe_pusher = sanitize_log_input(pusher_name)
 
     logger.info(f"📖 Updating GitHub Pages for {safe_repo}...")
+    logger.info(f"   Pusher: {safe_pusher}")
 
     try:
         # In production, this would:
@@ -148,13 +150,12 @@ async def update_github_pages(
         # 4. Rebuild Jekyll site
 
         doc_index = {
-            "generated": __import__("datetime").datetime.utcnow().isoformat(),
+            "generated": datetime.utcnow().isoformat(),
             "categories": categorize_files(changed_files),
             "total": len(changed_files),
-            "files": changed_files,
         }
 
-        logger.info(f"✅ GitHub Pages update complete")
+        logger.info("✅ GitHub Pages update complete")
         logger.info(f"   Files indexed: {len(changed_files)}")
         logger.info(f"   Categories: {list(doc_index['categories'].keys())}")
 
@@ -169,9 +170,9 @@ async def update_github_pages(
         raise
 
 
-async def notify_website_update(update_type: str, files: list = None):
+async def notify_website_update(update_type: str, files: Optional[list] = None):
     """Notify website of documentation updates"""
-    logger.info(f"📡 Notifying website of updates...")
+    logger.info("📡 Notifying website of updates...")
     logger.info(f"   Type: {update_type}")
     if files:
         logger.info(f"   Files: {len(files)}")
@@ -394,7 +395,7 @@ async def send_message(request: dict):
         "frequencies": {...}
     }
     """
-    logger.info(f"💬 Chat message received")
+    logger.info("💬 Chat message received")
     # Implementation stub - will be completed in next phase
     return {"status": "processing", "message": "Chat endpoint coming soon"}
 
@@ -406,7 +407,7 @@ async def get_resonance():
 
     Returns R = ∇Φᴱ · (φᵗ × ψʳ)
     """
-    logger.info(f"📊 Resonance calculation requested")
+    logger.info("📊 Resonance calculation requested")
     # Implementation stub - will calculate R score
     return {
         "resonance": 0.82,
@@ -417,7 +418,7 @@ async def get_resonance():
 @app.get("/api/frequencies")
 async def get_frequencies():
     """Get all 16 frequency states"""
-    logger.info(f"🎼 Frequencies requested")
+    logger.info("🎼 Frequencies requested")
     # Implementation stub - will return frequency states
     return {"frequencies": 16, "status": "coming-soon"}
 
