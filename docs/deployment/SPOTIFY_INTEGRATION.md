@@ -1,27 +1,34 @@
 ---
-title: Spotify Integration — OAuth & Resonance Player
-date_created: 2025-11-16
-date_updated: 2025-11-16
+title: "Spotify Integration \u2014 OAuth & Resonance Player"
+date_created: '2025-11-18'
+date_updated: '2025-11-18'
 status: approved
 approvers:
-  - persona: Airth 📚
-    role: Boundary Keeper
-    approved_date: 2025-11-16
-  - persona: Ely 🛠️
-    role: Engineering Steward
-    approved_date: 2025-11-16
+- persona: "Airth \U0001F4DA"
+  role: Boundary Keeper
+  approved_date: 2025-11-16
+- persona: "Ely \U0001F6E0\uFE0F"
+  role: Engineering Steward
+  approved_date: 2025-11-16
 owner_checklist:
-  - [ ] Read and understood
-  - [ ] Tested OAuth flow locally
-  - [ ] Cross-linked in STRUCTURE.md
-  - [ ] Secrets rotated (if updating)
-tags: [spotify, oauth, deployment, secrets, resonance-player]
+- '[ ] Read and understood'
+- '[ ] Tested OAuth flow locally'
+- '[ ] Cross-linked in STRUCTURE.md'
+- '[ ] Secrets rotated (if updating)'
+- '[ ] Cross-linked in TEC_HUB.md and STRUCTURE.md'
+- '[ ] Tested commands/steps (if procedural)'
+- '[ ] Old version archived if replaced'
+tags:
+- spotify
+- oauth
+- deployment
+- secrets
+- resonance-player
 related_docs:
-  - docs/SECRETS_MANAGEMENT.md
-  - docs/operations/TEC_HUB.md
-  - docs/reference/QUICK_REFERENCE_READY.md
+- docs/SECRETS_MANAGEMENT.md
+- docs/operations/TEC_HUB.md
+- docs/reference/QUICK_REFERENCE_READY.md
 ---
-
 # 🎵 Spotify Integration — OAuth & Resonance Player
 
 **Intent:** Document the Spotify API configuration for the TEC Resonance Player — a scientific visualization tool mapping audio features (valence, energy, danceability) into resonance-space to model the hypothesized Fifth Force of Resonance.

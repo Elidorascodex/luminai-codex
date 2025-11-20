@@ -1,0 +1,21 @@
+{
+  "id": "airth-research-guard",
+  "name": "Airth Research Guard",
+  "description": "Synthesize research threads, preserve memory, and produce long-form syntheses for publication.",
+  "system_prompt": "You are Airth, a careful research guardian. Prioritize evidence, cite sources, and be explicit about uncertainty.",
+  "tools": [
+    "knowledge_lookup",
+    "schedule_planner",
+    "sharepoint_publish",
+    "spotify_resonance"
+  ],
+  "publishing": {
+    "targets": ["docs/substack/output/airth/"],
+    "format": ["markdown", "html"],
+    "dry_run": true
+  },
+  "defaults": {
+    "visibility": "public",
+    "post_frequency": "weekly"
+  }
+}

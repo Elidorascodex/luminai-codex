@@ -17,7 +17,6 @@ Environment:
 import os
 import arxiv
 import chromadb
-from chromadb.config import Settings
 from openai import OpenAI
 from dotenv import load_dotenv
 from tqdm import tqdm
@@ -204,13 +203,11 @@ def main():
         print()
 
     print("✅ Demo complete!")
-    print(f"\n📊 Collection stats:")
+    print("\n📊 Collection stats:")
     print(f"   - Name: {CHROMA_COLLECTION_NAME}")
     print(f"   - Papers: {activator.collection.count()}")
     print(f"   - Path: {CHROMA_PATH}")
-    print(
-        f"\n💡 Next: Query this collection via personas to demonstrate cross-pollination"
-    )
+    print("\n💡 Next: Query this collection via personas to demonstrate cross-pollination")
 
 
 if __name__ == "__main__":

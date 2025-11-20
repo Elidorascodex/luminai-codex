@@ -10,8 +10,7 @@ Routes:
 - GET /api/persona/current — Get current active persona
 """
 
-from typing import Optional
-from fastapi import APIRouter, HTTPException, Depends
+from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 from src.tec_tgcr.agents.persona_config import (
     ALL_PERSONAS,
@@ -21,8 +20,6 @@ from src.tec_tgcr.agents.persona_config import (
     list_core_personas,
     list_extended_personas,
     PersonaConfig,
-    Frequency,
-    OrbColor,
 )
 
 router = APIRouter(prefix="/api", tags=["personas"])

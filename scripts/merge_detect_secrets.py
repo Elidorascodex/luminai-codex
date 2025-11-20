@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-import json, re, sys, os
+import json
+import re
+import sys
+import os
 
 p = ".secrets.scan.out"
 if not os.path.exists(p):

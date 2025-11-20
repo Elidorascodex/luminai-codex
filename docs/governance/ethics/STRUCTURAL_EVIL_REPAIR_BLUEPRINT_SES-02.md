@@ -1,3 +1,22 @@
+---
+title: Structural Evil Repair Blueprint Ses 02
+date_created: '2025-11-18'
+date_updated: '2025-11-18'
+status: draft
+approvers:
+- persona: Ely
+  role: Engineering Steward
+owner_checklist:
+- '[ ] Read and understood'
+- '[ ] Cross-linked in TEC_HUB.md and STRUCTURE.md'
+- '[ ] Tested commands/steps (if procedural)'
+- '[ ] Old version archived if replaced'
+tags:
+- governance
+- ethics
+related_docs: []
+---
+
 # SES-02 — Structural Evil Remediation Blueprint
 
 _Last Updated: November 15, 2025_

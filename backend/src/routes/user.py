@@ -12,12 +12,11 @@ Endpoints:
 - GET /api/session/{session_id} - Get session data
 """
 
-from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks
-from typing import Optional, List
+from fastapi import APIRouter, HTTPException, BackgroundTasks
+from typing import Optional
 from datetime import datetime, timedelta
 import logging
-import json
-from pathlib import Path
+
 
 from ..models.user import (
     UserProfile,

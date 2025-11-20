@@ -31,7 +31,7 @@ root:
       - docs/operations/TEC_HUB.md
 
   GPT_CONFIGURATION_GUIDE.md:
-    purpose: "How to configure ChatGPT + Copilot for LuminAI system prompts"
+    purpose: "How to configure ChatGPT + CODEX for LuminAI system prompts"
     audience: "[Power Users, Community]"
     maintain_by: "Community Lead"
 
@@ -228,7 +228,7 @@ docs:
       audience: "[Module Developers]"
 
     GPT_CONFIGURATION_GUIDE.md:
-      purpose: "How to configure ChatGPT + Copilot for LuminAI system prompts"
+      purpose: "How to configure ChatGPT + CODEX for LuminAI system prompts"
       audience: "[Power Users, Community]"
 
     IMPLEMENTATION_GUIDE.md:
@@ -383,7 +383,7 @@ phase_1_completion:
   "Foundation Setup (90% complete)":
     - "✅ Project overview & roadmap"
     - "✅ Operational & reference docs"
-    - "✅ Copilot/GPT configuration guide"
+    - "✅ CODEX/GPT configuration guide"
     - "✅ Logo finalization & branding assets"
     - "✅ Security setup & GitHub configuration"
     - "✅ CI/CD workflows (.github/workflows/*.yml)"

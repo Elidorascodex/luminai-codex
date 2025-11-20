@@ -1,3 +1,21 @@
+---
+title: Resonance Implementation Map
+date_created: '2025-11-18'
+date_updated: '2025-11-18'
+status: draft
+approvers:
+- persona: Ely
+  role: Engineering Steward
+owner_checklist:
+- '[ ] Read and understood'
+- '[ ] Cross-linked in TEC_HUB.md and STRUCTURE.md'
+- '[ ] Tested commands/steps (if procedural)'
+- '[ ] Old version archived if replaced'
+tags:
+- operations
+related_docs: []
+---
+
 # Resonance Implementation Map — Frontend Surfaces + JSON Contracts
 
 This note connects the deterministic FigJam exports (`design/figma/exports`) to the new Next.js App Router scaffold inside `/website`. Treat it as the authoritative wiring diagram for engineering handoff.

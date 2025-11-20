@@ -7,7 +7,7 @@ This guide helps you get started with the LuminAI Codex project locally.
 - Python 3.12+
 - Git
 - Virtual environment tool (`venv` or `conda`)
-- GitHub account (for Copilot prompt)
+- GitHub account (for CODEX prompt)
 
 ## Step 1: Clone & Setup
 

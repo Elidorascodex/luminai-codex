@@ -1,26 +1,35 @@
 ---
-title: Emotion → Creation Pipeline & Non-Binding Axioms
+title: "Emotion \u2192 Creation Pipeline & Non-Binding Axioms"
 status: draft
-date_created: 2025-11-16
-date_updated: 2025-11-16
+date_created: '2025-11-18'
+date_updated: '2025-11-18'
 approvers:
-  - persona: Ely
-    role: Engineering Steward
+- persona: Ely
+  role: Engineering Steward
 owner_checklist:
-  - [ ] Cross-linked in TEC_HUB.md
-  - [ ] Reviewed for privacy scope wording
-  - [ ] Added initial persona margin notes
-  - [ ] Classification thresholds validated against sample data
-  - [ ] Session access gating stub implemented
-tags: [emotion, creation, pipeline, spotify, consent, aqueduct]
+- '[ ] Cross-linked in TEC_HUB.md'
+- '[ ] Reviewed for privacy scope wording'
+- '[ ] Added initial persona margin notes'
+- '[ ] Classification thresholds validated against sample data'
+- '[ ] Session access gating stub implemented'
+- '[ ] Read and understood'
+- '[ ] Cross-linked in TEC_HUB.md and STRUCTURE.md'
+- '[ ] Tested commands/steps (if procedural)'
+- '[ ] Old version archived if replaced'
+tags:
+- emotion
+- creation
+- pipeline
+- spotify
+- consent
+- aqueduct
 related_docs:
-  - CODEBASE_MEMO_PRACTICES.md
-  - docs/operations/DEV_RECOVERY.md
-  - SPOTIFY_INTEGRATION.md
-  - docs/governance/ethics/TEC_ConsentOS_v1.1.md
-  - docs/reference/Resonance_Thesis.md
+- CODEBASE_MEMO_PRACTICES.md
+- docs/operations/DEV_RECOVERY.md
+- SPOTIFY_INTEGRATION.md
+- docs/governance/ethics/TEC_ConsentOS_v1.1.md
+- docs/reference/Resonance_Thesis.md
 ---
-
 # 🎼 Emotion → Creation Pipeline (Non-Binding Axioms, Opt-In Transformation)
 
 > We do not weaponize states. We transmute them. An angry 10‑minute window is not a pathology record — it is kinetic fuel for a riff, a beat, a poem, a movement cadence. Joy, hunger, loneliness, focus, playful spikes — ALL are creative inputs. No single affect is privileged; rage does not anchor design. Diversity of felt signal = diversity of artifact output.

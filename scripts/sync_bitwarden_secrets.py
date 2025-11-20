@@ -24,11 +24,10 @@ import os
 import subprocess
 import sys
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List
 import logging
 from datetime import datetime, timezone
-import hashlib
-import base64
+# hashlib and base64 were imported previously but aren't used; remove to satisfy flake8
 
 # Configure logging
 logging.basicConfig(

@@ -5,6 +5,30 @@
     }
   ],
   "settings": {
-    "codeQL.createQuery.qlPackLocation": "\\\\wsl.localhost\\Ubuntu\\home\\tec_tgcr\\luminai-codex"
+    "codeQL.createQuery.qlPackLocation": "\\\\wsl.localhost\\Ubuntu\\home\\tec_tgcr\\luminai-codex",
+    "terminal.integrated.enableImages": true,
+    "github-actions.workflows.pinned.workflows": [],
+    "github.copilot.chat.alternateGptPrompt.enabled": true,
+    "github.copilot.chat.anthropic.thinking.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.chat.virtualTools.threshold": 128,
+    "github.copilot.chat.useResponsesApi": true,
+    "github.copilot.chat.tools.memory.enabled": true,
+    "github.copilot.chat.scopeSelection": true,
+    "github.copilot.chat.notebook.followCellExecution.enabled": true,
+    "github.copilot.chat.notebook.enhancedNextEditSuggestions.enabled": true,
+    "github.copilot.chat.newWorkspace.useContext7": true,
+    "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [],
+    "python.analysis.aiHoverSummaries": true,
+    "appmod.enableMcpServer": true,
+    "chat.extensionUnification.enabled": true,
+    "powershell.powerShellDefaultVersion": "PowerShell (Store)",
+    "powershell.powerShellExePath": "C:\\Users\\Ghedd\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe",
+    "powershell.powerShellAdditionalExePaths": {
+      "ISE": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell_ise.exe"
+    },
+    "powershell.integratedConsole.suppressStartupBanner": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true
   }
 }

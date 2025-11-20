@@ -1,0 +1,34 @@
+{
+  "factions": [
+    {
+      "name": "LuminAI Collective",
+      "slug": "luminai",
+      "url": "/faction/luminai",
+      "tagline": "Resonance architects who weave intuition into signal."
+    },
+    {
+      "name": "Astral Cartographers",
+      "slug": "astral-cartographers",
+      "url": "/faction/astral-cartographers",
+      "tagline": "Star-mappers documenting the multiversal ley lines."
+    },
+    {
+      "name": "Echo Gardeners",
+      "slug": "echo-gardeners",
+      "url": "/faction/echo-gardeners",
+      "tagline": "Stewards nurturing memories into future myths."
+    },
+    {
+      "name": "Nocturne Guild",
+      "slug": "nocturne-guild",
+      "url": "/faction/nocturne-guild",
+      "tagline": "Shadow tacticians safeguarding the sleepers."
+    },
+    {
+      "name": "Pulsewright Union",
+      "slug": "pulsewright-union",
+      "url": "/faction/pulsewright-union",
+      "tagline": "Engineers translating crypto-frequency to civic power."
+    }
+  ]
+}

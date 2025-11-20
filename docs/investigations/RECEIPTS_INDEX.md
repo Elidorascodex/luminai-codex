@@ -1,3 +1,21 @@
+---
+title: Receipts Index
+date_created: '2025-11-18'
+date_updated: '2025-11-18'
+status: draft
+approvers:
+- persona: Ely
+  role: Engineering Steward
+owner_checklist:
+- '[ ] Read and understood'
+- '[ ] Cross-linked in TEC_HUB.md and STRUCTURE.md'
+- '[ ] Tested commands/steps (if procedural)'
+- '[ ] Old version archived if replaced'
+tags:
+- investigations
+related_docs: []
+---
+
 # 📎 Receipts Index — Primary Sources Only
 
 Add every source you rely on here. Prefer: official blog posts, regulatory filings, product docs, SEC/FTC actions, CVEs, academic papers, newsroom articles with named sources.

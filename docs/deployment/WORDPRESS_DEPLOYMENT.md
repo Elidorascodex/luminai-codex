@@ -1,25 +1,30 @@
 ---
 title: WordPress.com Deployment Configuration
-date_created: 2025-11-16
-date_updated: 2025-11-16
+date_created: '2025-11-18'
+date_updated: '2025-11-18'
 status: draft
 approvers:
-  - persona: Ely
-    role: Engineering Steward
+- persona: Ely
+  role: Engineering Steward
 owner_checklist:
-  - [ ] Read and understood
-  - [ ] Tested deployment flow to staging
-  - [ ] Cross-linked in TEC_HUB.md and STRUCTURE.md
-  - [ ] Verified automatic deployment triggers
-  - [ ] Documented rollback procedure
-tags: [wordpress, deployment, automation, elidorascodex]
+- '[ ] Read and understood'
+- '[ ] Tested deployment flow to staging'
+- '[ ] Cross-linked in TEC_HUB.md and STRUCTURE.md'
+- '[ ] Verified automatic deployment triggers'
+- '[ ] Documented rollback procedure'
+- '[ ] Tested commands/steps (if procedural)'
+- '[ ] Old version archived if replaced'
+tags:
+- wordpress
+- deployment
+- automation
+- elidorascodex
 related_docs:
-  - docs/deployment/SPOTIFY_INTEGRATION.md
-  - docs/SECRETS_MANAGEMENT.md
-  - docs/operations/TEC_HUB.md
-  - CODEBASE_MEMO_PRACTICES.md
+- docs/deployment/SPOTIFY_INTEGRATION.md
+- docs/SECRETS_MANAGEMENT.md
+- docs/operations/TEC_HUB.md
+- CODEBASE_MEMO_PRACTICES.md
 ---
-
 # 🌐 WordPress.com Deployment — elidorascodex.com Plugin Integration
 
 **Intent:** Document the GitHub repository connection to WordPress.com for automatic deployment of the LuminAI Codex as a WordPress plugin, enabling ceremonial content publishing, resonance card display, and API bridge functionality.

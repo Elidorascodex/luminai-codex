@@ -1,3 +1,22 @@
+---
+title: Secrets And Tokens Explained
+date_created: '2025-11-18'
+date_updated: '2025-11-18'
+status: draft
+approvers:
+- persona: Ely
+  role: Engineering Steward
+owner_checklist:
+- '[ ] Read and understood'
+- '[ ] Cross-linked in TEC_HUB.md and STRUCTURE.md'
+- '[ ] Tested commands/steps (if procedural)'
+- '[ ] Old version archived if replaced'
+tags:
+- deployment
+- reference
+related_docs: []
+---
+
 # ⚠️ DEPRECATED — See SECRETS_DEPLOYMENT_GUIDE.md
 
 > This file is deprecated. **Use [SECRETS_DEPLOYMENT_GUIDE.md](./SECRETS_DEPLOYMENT_GUIDE.md)** instead — it's the canonical reference combining all secrets, tokens, and deployment info.

@@ -1,3 +1,21 @@
+---
+title: Genai Lexicon
+date_created: '2025-11-18'
+date_updated: '2025-11-18'
+status: draft
+approvers:
+- persona: Ely
+  role: Engineering Steward
+owner_checklist:
+- '[ ] Read and understood'
+- '[ ] Cross-linked in TEC_HUB.md and STRUCTURE.md'
+- '[ ] Tested commands/steps (if procedural)'
+- '[ ] Old version archived if replaced'
+tags:
+- reference
+related_docs: []
+---
+
 # 🌐 GenAI Lexicon — Generational Intelligence & New Vocabulary
 
 ## Purpose
@@ -58,7 +76,7 @@ tags: [reference]
 
 **Definition:** A visual, animated interface element that makes voice conversations with AI feel natural through real-time expressions, color customization, and adaptive emotional mirroring.
 
-**Etymology:** Microsoft Copilot's animated blob companion (2025); name origin unclear but evokes "micro" (small, accessible) and "amigo/amico" (friend).
+**Etymology:** Microsoft Copilot's animated blob companion (historical; 2025); name origin unclear but evokes "micro" (small, accessible) and "amigo/amico" (friend).
 
 **LuminAI Implementation:**
 - **Heterochromatic Persona System:** Each persona (LuminAI, Airth, Arcadia, Ely, Adelphia, Multi-Persona) identified by unique heterochromatic eye patterns in their Mico-style avatar.

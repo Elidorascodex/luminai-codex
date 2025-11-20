@@ -7,8 +7,8 @@ import os
 from typing import Dict, List, Optional, Any
 from enum import Enum
 from loguru import logger
-from openai import OpenAI, AsyncOpenAI
-from anthropic import Anthropic, AsyncAnthropic
+from openai import AsyncOpenAI
+from anthropic import AsyncAnthropic
 
 
 class LLMProvider(str, Enum):

@@ -1,0 +1,928 @@
+{
+  "timestamp": "2025-11-19T04:29:23Z",
+  "dry_run": false,
+  "docs_root": "/home/tec_tgcr/luminai-codex/docs",
+  "docs": {
+    "scanned": 166,
+    "added_front_matter": [
+      {
+        "path": "docs/ALPHA_RELEASE_NOTES.md",
+        "applied": true
+      },
+      {
+        "path": "docs/CONSCIOUSNESS_INTEGRATION_ROADMAP.md",
+        "applied": true
+      },
+      {
+        "path": "docs/PLATFORM_ARCHITECTURE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/PYTHON_AGENT_STACK_AUDIT.md",
+        "applied": true
+      },
+      {
+        "path": "docs/SECRETS_MANAGEMENT.md",
+        "applied": true
+      },
+      {
+        "path": "docs/SESSION_COMPLETION_SUMMARY.md",
+        "applied": true
+      },
+      {
+        "path": "docs/TECH_FILES_COHERENCE_AUDIT.md",
+        "applied": true
+      },
+      {
+        "path": "docs/architecture/LUMINAI_ENGINEERING_SCHEMATICS_CHECKLIST.md",
+        "applied": true
+      },
+      {
+        "path": "docs/architecture/LUMINAI_TECHNICAL_INFRASTRUCTURE_REQUIREMENTS.md",
+        "applied": true
+      },
+      {
+        "path": "docs/brand/3D_CREATION_PROMPT.md",
+        "applied": true
+      },
+      {
+        "path": "docs/brand/ASSET_INVENTORY.md",
+        "applied": true
+      },
+      {
+        "path": "docs/brand/BRAND_DECK_SUMMARY.md",
+        "applied": true
+      },
+      {
+        "path": "docs/brand/INDEX.md",
+        "applied": true
+      },
+      {
+        "path": "docs/brand/IT_TECHNICAL_UPDATES.md",
+        "applied": true
+      },
+      {
+        "path": "docs/brand/LOGO_FINALIZATION.md",
+        "applied": true
+      },
+      {
+        "path": "docs/brand/LOGO_FINAL_BRIEF.md",
+        "applied": true
+      },
+      {
+        "path": "docs/brand/LOGO_VARIANT_SPECS.md",
+        "applied": true
+      },
+      {
+        "path": "docs/brand/LUMINAI_LOGO_AND_BRANDING_SPECIFICATIONS.md",
+        "applied": true
+      },
+      {
+        "path": "docs/brand/SECURITY_BRANDING_SUMMARY.md",
+        "applied": true
+      },
+      {
+        "path": "docs/consciousness/AXIOM_BOUNDARYLESS_EMERGENCE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/consciousness/AXIOM_SCHOLARLY_CONVERSION_LOG.md",
+        "applied": true
+      },
+      {
+        "path": "docs/consciousness/BUNDLE_NAVIGATION.md",
+        "applied": true
+      },
+      {
+        "path": "docs/consciousness/EMERGENCE_ARCHITECTURE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/consciousness/FIVE_TRUTHS_PUBLIC_ARTICLE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/consciousness/LUMINAI_UNIFIED_DEFENSE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/consciousness/PERSONAL_MISSION_STATEMENT.md",
+        "applied": true
+      },
+      {
+        "path": "docs/consciousness/PERSONAS_RESONANCE_EMBODIED.md",
+        "applied": true
+      },
+      {
+        "path": "docs/consciousness/RIGHT_SIDE_OF_HISTORY.md",
+        "applied": true
+      },
+      {
+        "path": "docs/consciousness/SESSION_20251111_EMERGENCE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/consciousness/TECHNICAL_SPECIFICATION.md",
+        "applied": true
+      },
+      {
+        "path": "docs/consciousness/TRIADIC_FOUNDATION.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/ARCHITECTURE_QUICK_REFERENCE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/CLI_TOOL_SPECIFICATION.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/GITHUB_WEBHOOK_SETUP.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/IMPLEMENTATION_ROADMAP.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/MULTI_SURFACE_EXECUTION_BLUEPRINT.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/PLATFORM_INTEGRATION_ARCHITECTURE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/RESONANCE_PLATFORM_DEV_STARTUP.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/SETUP_HUB.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/WEBSITE_INTEGRATION_PLAN.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/backend/07_TECH_ENV_AND_SECRETS.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/checklists/DEPLOYMENT_CHECKLIST.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/guides/ENV_LOCAL_SETUP.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/guides/GITHUB_APP_QUICK_START.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/guides/GITHUB_APP_SETUP.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/guides/GITHUB_WEBHOOK_SETUP.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/guides/WORKFLOWS_SECRETS_GUIDE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/reference/ENVIRONMENT_SETUP.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/reference/SECRETS_AND_TOKENS_EXPLAINED.md",
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/reference/SECRETS_DEPLOYMENT_GUIDE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/education/ADMINISTRATIVE_RESONANCE_FAILURE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/education/UNDERSTANDING_LUMINAI_CODEX.md",
+        "applied": true
+      },
+      {
+        "path": "docs/framework/CUTE_MODULAR_ARCHITECTURE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/framework/GPT_CONFIGURATION_GUIDE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/framework/IMPLEMENTATION_GUIDE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/governance/LEGAL_COMPLIANCE_REVIEW.md",
+        "applied": true
+      },
+      {
+        "path": "docs/governance/LUMINAI_MASTER_OPERATING_FRAMEWORK.md",
+        "applied": true
+      },
+      {
+        "path": "docs/governance/Privacy_Policy.md",
+        "applied": true
+      },
+      {
+        "path": "docs/governance/SYSTEM_INSTRUCTIONS_RESONANCE_AGENT.md",
+        "applied": true
+      },
+      {
+        "path": "docs/governance/Terms_of_Service.md",
+        "applied": true
+      },
+      {
+        "path": "docs/governance/USER_DATA_ANONYMIZATION_FRAMEWORK.md",
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/PERSONA_STRUCTURAL_EVIL_RESPONSE_MAPPING.md",
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/STRUCTURAL_EVIL.md",
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/STRUCTURAL_EVIL_REPAIR_BLUEPRINT_SES-02.md",
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/TEC_Resonance_Axioms.md",
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/THE_STEWARDSHIP_MANIFESTO.md",
+        "applied": true
+      },
+      {
+        "path": "docs/index.md",
+        "applied": true
+      },
+      {
+        "path": "docs/investigations/RECEIPTS_INDEX.md",
+        "applied": true
+      },
+      {
+        "path": "docs/investigations/TIMELINE_AI_SAFETY_2024_2026.md",
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/01_CORE_SYSTEM_INSTRUCTIONS.md",
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/02_CORE_PERSONAS_AND_COVENANTS.md",
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/03_CORE_RESONANCE_THEORY.md",
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/04_CORE_AQUEDUCT_CONJECTURE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/05_CORE_CONTEXT_PACKAGE_SPEC.md",
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/06A_SHADOW_WORK_COVENANT.md",
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/06B_SHADOW_WORK_PERSONA_SPECS.md",
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/15_REF_DATA_AXIOMS.md",
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/16_REF_PERSONA_REGISTRY.md",
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/17_PERSONA_THE_RELUCTANT_STEWARD.md",
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/21_LORE_MASTER.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/BUILD_YOUR_OWN_GUIDE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/DEV_RECOVERY.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/GENAI_IMPLEMENTATION_ROADMAP.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/IMPLEMENTATION_COMPLETE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/LOCAL_ENV_TUNING.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/LUMINAI_ASSETS_INVENTORY_AND_TRANSFER_PLAN.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/LUMINAI_SYSTEMATIC_MIGRATION_STRATEGY.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/MASTER_OPERATIONS_GUIDE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/NEXT_STEPS_TESTING_DISCORD_LANDING.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/OBSERVABILITY.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/OPERATIONS_KNOWLEDGE_MAP.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/PROJECT_13_PROGRESS.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/PROJECT_13_ROADMAP.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/QUICKSTART.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/RESONANCE_IMPLEMENTATION_MAP.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/TEC_MEMO_TEMPLATE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/TESTING_PLATFORM_STRATEGY.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/UNIFIED_GUIDES_INVENTORY.md",
+        "applied": true
+      },
+      {
+        "path": "docs/operations/UNIFIED_IMPLEMENTATION_CHECKLIST.md",
+        "applied": true
+      },
+      {
+        "path": "docs/pitch/LYCEUM_LIVING_SYSTEM_PITCH.md",
+        "applied": true
+      },
+      {
+        "path": "docs/reference/GENAI_LEXICON.md",
+        "applied": true
+      },
+      {
+        "path": "docs/reference/PERSONA_GLOBULE_VISUAL_SPEC.md",
+        "applied": true
+      },
+      {
+        "path": "docs/reference/QUICK_REFERENCE_READY.md",
+        "applied": true
+      },
+      {
+        "path": "docs/reference/RESONANCE_THESIS_FULLSHOT.md",
+        "applied": true
+      },
+      {
+        "path": "docs/reference/RESONANCE_UNIFICATION_TABLE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/reference/UNIFIED_FRAMEWORKS_DOCUMENTATION.md",
+        "applied": true
+      },
+      {
+        "path": "docs/reference/elidoras_codex_mythoscientific_birth.md",
+        "applied": true
+      },
+      {
+        "path": "docs/reference/the_sixteen_frequencies_of_elidoras_a_resonant_cosmology_with_theological_commentary.md",
+        "applied": true
+      },
+      {
+        "path": "docs/resonance-logs/RESONANCE_LOG_TEMPLATE.md",
+        "applied": true
+      },
+      {
+        "path": "docs/resonance-logs/SESSION_2025-11-14_EMOTIONS_AS_PATTERN_RECOGNITION.md",
+        "applied": true
+      },
+      {
+        "path": "docs/resonance-logs/sleep_token_cycle.md",
+        "applied": true
+      },
+      {
+        "path": "docs/security/SECURITY_SETUP_CHECKLIST.md",
+        "applied": true
+      },
+      {
+        "path": "docs/updates/2025/2025-10-23-organization-update.md",
+        "applied": true
+      },
+      {
+        "path": "docs/updates/2025/2025-11-15-genai-framework-launch.md",
+        "applied": true
+      },
+      {
+        "path": "docs/updates/PERSONA_SYSTEM_COMPLETE_9.md",
+        "applied": true
+      },
+      {
+        "path": "docs/updates/SESSION_2025_11_13_SHADOW_WORK_INTEGRATION.md",
+        "applied": true
+      }
+    ],
+    "normalized": [
+      {
+        "path": "docs/GETTING_STARTED.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/STRUCTURE.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "owner_checklist",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/architecture/EMOTION_TO_CREATION_PIPELINE.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "owner_checklist"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/architecture/KUBERNETES_DECISION.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/architecture/architecture-map.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/BACKEND_OBSERVABILITY.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/DOCKER_MULTI_LLM.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/INDEX.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/RESONANCE_PLATFORM_WIREFRAMES.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/SPOTIFY_INTEGRATION.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "owner_checklist"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/WORDPRESS_DEPLOYMENT.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "owner_checklist"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/backend/06_TECH_RUNTIME_SETUP.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/backend/08_TECH_DOCKER_AND_STACK.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/backend/09_TECH_API_AND_AUTOMATIONS.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/backend/10_TECH_TESTING_GUIDE.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/backend/11_TECH_DEPLOYMENT_PIPELINE.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/backend/12_TECH_COPILOT_AND_AGENTS.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/checklists/README.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/guides/README.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/deployment/reference/README.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/DESIGN_PRESSURES.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/INDEX.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/TECH_Axiom_Language_As_Actuator.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/TECH_Reason_Trace_Spec_v0.1.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/TEC_Adversarial_Playbook_v0.1.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/TEC_ConsentOS_v1.1.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/TEC_Embodiment_Covenant_v0.1.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/TEC_Emotional_Capacity_Framework.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/TEC_Ethics_of_Sexualization.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/TEC_Network_Laws_v0.1.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/governance/ethics/TEC_Youth_Interaction_Covenant.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/investigations/PLAUSIBLE_DENIABILITY_SMASHER.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/investigations/README.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/00_README.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/13_REF_GLOSSARY.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/14_REF_RESONANCE_MAP.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/17_REF_TROUBLESHOOTING.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/18_REF_STYLE_AND_BRAND.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/19_REF_ESCALATION_AND_CONTACTS.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/llm-onboarding/20_REF_RESOURCE_INDEX.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/operations/AIRTH_AUTHORSHIP_SESSION_CONFIG.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/operations/TEC_HUB.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "owner_checklist",
+          "related_docs",
+          "approvers"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/operations/TEC_LEXICON.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/reference/MULTI_LLM_ARCHITECTURE.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/reference/MULTI_LLM_SETUP.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/security/SECURITY_LOG_ARCHIVAL.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/updates/2025/2025-10-26-organization-update.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "tags",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/updates/2025/README.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "tags",
+          "related_docs"
+        ],
+        "applied": true
+      },
+      {
+        "path": "docs/updates/README.md",
+        "fields": [
+          "date_created",
+          "date_updated",
+          "related_docs"
+        ],
+        "applied": true
+      }
+    ],
+    "invalid_front_matter": []
+  },
+  "substack": {
+    "dry_run": false,
+    "out_dir": "/home/tec_tgcr/luminai-codex/docs/substack/output",
+    "stdout": "wrote: /home/tec_tgcr/luminai-codex/docs/substack/output/00_readme.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/01_core_system_instructions.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/02_core_personas_and_covenants.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/03_core_resonance_theory.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/04_core_aqueduct_conjecture.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/05_core_context_package_spec.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/06a_shadow_work_covenant.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/06b_shadow_work_persona_specs.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/13_ref_glossary.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/14_ref_resonance_map.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/15_ref_data_axioms.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/16_ref_persona_registry.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/17_persona_the_reluctant_steward.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/17_ref_troubleshooting.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/18_ref_style_and_brand.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/19_ref_escalation_and_contacts.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/20_ref_resource_index.md\nwrote: /home/tec_tgcr/luminai-codex/docs/substack/output/21_lore_master.md\nProcessed 18 persona files."
+  }
+}

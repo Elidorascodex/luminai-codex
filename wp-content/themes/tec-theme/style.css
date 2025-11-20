@@ -1,0 +1,103 @@
+/*
+Theme Name: TEC Theme
+Theme URI: https://github.com/TEC-The-ELidoras-Codex
+Author: TEC • The Elidoras Codex
+Author URI: https://github.com/TEC-The-ELidoras-Codex
+Description: Custom header/navigation experience for the TEC network with faction dropdown and crypto tracker.
+Version: 0.1.0
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tec-theme
+*/
+
+:root {
+    --color-header: #0f0f0f;
+    --colors-background: #0a0a0a;
+    --colors-backgroundMedium: #1f1f1f;
+    --colors-border: rgba(255, 255, 255, 0.1);
+    --colors-text: #e0e0e0;
+    --colors-textMuted: #aaaaaa;
+    --colors-primary: #00ffcc;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --layout-containerWidth: 1100px;
+    --layout-containerPadding: 1rem;
+    --typography-headings-fontFamily: 'Orbitron', sans-serif;
+    --typography-body-fontFamily: 'Poppins', 'Segoe UI', sans-serif;
+    --borders-radiusSmall: 4px;
+    --borders-radiusMedium: 8px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--typography-body-fontFamily);
+    background-color: var(--colors-background);
+    color: var(--colors-text);
+}
+
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    clip: auto;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--colors-primary);
+    color: var(--colors-background);
+    border-radius: var(--borders-radiusSmall);
+}
+
+.site {
+    min-height: 100vh;
+}
+
+.site-content {
+    padding: var(--spacing-md) var(--layout-containerPadding);
+}
+
+.site-footer {
+    padding: 2rem var(--layout-containerPadding);
+    border-top: 1px solid var(--colors-border, rgba(255, 255, 255, 0.1));
+    background-color: #050505;
+}
+
+.footer-container {
+    max-width: var(--layout-containerWidth, 1100px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+.footer-menu a {
+    color: var(--colors-textMuted, #aaaaaa);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover,
+.footer-menu a:focus-visible {
+    color: var(--colors-primary, #00ffcc);
+}

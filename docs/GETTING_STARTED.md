@@ -1,19 +1,20 @@
 ---
 title: Getting Started
-date_created: 2025-11-16
-date_updated: 2025-11-16
+date_created: '2025-11-18'
+date_updated: '2025-11-18'
 status: draft
 approvers:
-  - persona: Ely
-    role: Engineering Steward
+- persona: Ely
+  role: Engineering Steward
 owner_checklist:
-  - [ ] Read and understood
-  - [ ] Cross-linked in TEC_HUB.md and STRUCTURE.md
-  - [ ] Tested commands/steps (if procedural)
-  - [ ] Old version archived if replaced
-tags: [docs]
+- '[ ] Read and understood'
+- '[ ] Cross-linked in TEC_HUB.md and STRUCTURE.md'
+- '[ ] Tested commands/steps (if procedural)'
+- '[ ] Old version archived if replaced'
+tags:
+- docs
+related_docs: []
 ---
-
 # Local Development Setup
 
 This guide helps you get started with the LuminAI Codex project locally.

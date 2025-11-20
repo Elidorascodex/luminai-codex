@@ -9,7 +9,7 @@ import sys
 import os
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional, Dict, Any
 
 src_path = Path(__file__).parent.parent / "src"
@@ -170,6 +170,9 @@ logging.config.dictConfig(
     }
 )
 logger = logging.getLogger(__name__)
+
+# UTC timezone alias used throughout the module
+UTC = timezone.utc
 
 # Metrics tracking (in-memory for now, replace with Prometheus in production)
 from collections import defaultdict  # noqa: E402
@@ -884,10 +887,16 @@ async def send_message(request: MessageRequest):
                     )
                     # Fallback to mode-based response
                     err_msg = str(e)[:50]
-                    assistant_response = f"[{response_mode}] I'm processing your message. (LLM error: {err_msg})"
+                    assistant_response = (
+                        f"[{response_mode}] I'm processing your message. "
+                        f"(LLM error: {err_msg})"
+                    )
             else:
                 # No LLM client available - mode-based response
-                assistant_response = f"[{response_mode}] Processing with suggestions: {', '.join(scoring.suggestions[:2])}"
+                assistant_response = (
+                    f"[{response_mode}] Processing with suggestions: "
+                    f"{', '.join(scoring.suggestions[:2])}"
+                )
 
         # AXIOM ENFORCEMENT: Validate Unconditional Witnessing (no deflection)
         try:

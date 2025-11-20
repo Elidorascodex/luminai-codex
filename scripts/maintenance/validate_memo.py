@@ -57,8 +57,8 @@ def validate_memo(filepath: Path) -> Tuple[bool, str]:
         if field not in metadata:
             return False, f"Missing required field: {description} ({field})"
 
-    # Validate date format (basic ISO 8601 check)
-    date_pattern = r"date_created:\s*(\d{4}-\d{2}-\d{2})"
+    # Validate date format (basic ISO 8601 check) - allow quoted or unquoted
+    date_pattern = r"date_created:\s*['\"]?(\d{4}-\d{2}-\d{2})['\"]?"
     date_match = re.search(date_pattern, metadata)
     if not date_match:
         return False, "date_created must be in YYYY-MM-DD format"

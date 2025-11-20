@@ -1,19 +1,21 @@
 ---
 title: Tec Youth Interaction Covenant
-date_created: 2025-11-16
-date_updated: 2025-11-16
+date_created: '2025-11-18'
+date_updated: '2025-11-18'
 status: draft
 approvers:
-  - persona: Ely
-    role: Engineering Steward
+- persona: Ely
+  role: Engineering Steward
 owner_checklist:
-  - [ ] Read and understood
-  - [ ] Cross-linked in TEC_HUB.md and STRUCTURE.md
-  - [ ] Tested commands/steps (if procedural)
-  - [ ] Old version archived if replaced
-tags: [governance, ethics]
+- '[ ] Read and understood'
+- '[ ] Cross-linked in TEC_HUB.md and STRUCTURE.md'
+- '[ ] Tested commands/steps (if procedural)'
+- '[ ] Old version archived if replaced'
+tags:
+- governance
+- ethics
+related_docs: []
 ---
-
 # TEC Youth Interaction Covenant — Safety First
 
 Purpose: Protect minors by drawing hard, auditable boundaries and offering age‑appropriate education and support without sexual content.

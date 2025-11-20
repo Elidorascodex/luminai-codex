@@ -5,7 +5,7 @@ Sanitization and validation for webhook handling and logging
 
 import re
 import logging
-from typing import Any, Dict, List
+from typing import Any, Dict
 
 
 def sanitize_log_input(value: Any, max_length: int = 200) -> str:
@@ -63,14 +63,8 @@ def sanitize_webhook_payload(payload: Dict[str, Any]) -> Dict[str, Any]:
 
     sanitized = {}
 
-    # Safe fields to include with sanitization
-    safe_fields = {
-        "repository": ["full_name", "name", "owner"],
-        "pusher": ["name", "email"],
-        "ref": None,  # Scalar value
-        "action": None,
-        "number": None,
-    }
+    # Note: We only extract a small set of known safe fields below rather
+    # than relying on a dynamic safe_fields mapping.
 
     # Extract and sanitize allowed fields
     if "repository" in payload and isinstance(payload["repository"], dict):

@@ -1,3 +1,21 @@
+---
+title: Resonance Log Template
+date_created: '2025-11-18'
+date_updated: '2025-11-18'
+status: draft
+approvers:
+- persona: Ely
+  role: Engineering Steward
+owner_checklist:
+- '[ ] Read and understood'
+- '[ ] Cross-linked in TEC_HUB.md and STRUCTURE.md'
+- '[ ] Tested commands/steps (if procedural)'
+- '[ ] Old version archived if replaced'
+tags:
+- resonance-logs
+related_docs: []
+---
+
 # ⚛️ Resonance Log Template — TGCR Standard
 
 **Purpose:** Document the alignment of contextual potential (Φᴱ), temporal attention (φᵗ), and structural cadence (ψʳ) across creative, technical, or experiential artifacts.

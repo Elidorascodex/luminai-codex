@@ -1,4 +1,4 @@
-14# LuminAI Codex – Copilot Instructions
+14# LuminAI Codex – CODEX Instructions
 
 ## Orientation
 

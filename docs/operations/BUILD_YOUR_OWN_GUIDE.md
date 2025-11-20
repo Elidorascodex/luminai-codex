@@ -1,3 +1,21 @@
+---
+title: Build Your Own Guide
+date_created: '2025-11-18'
+date_updated: '2025-11-18'
+status: draft
+approvers:
+- persona: Ely
+  role: Engineering Steward
+owner_checklist:
+- '[ ] Read and understood'
+- '[ ] Cross-linked in TEC_HUB.md and STRUCTURE.md'
+- '[ ] Tested commands/steps (if procedural)'
+- '[ ] Old version archived if replaced'
+tags:
+- operations
+related_docs: []
+---
+
 # Build Your Own Ethics-Aware AI System
 
 **Based on**: LuminAI Codex Framework  
