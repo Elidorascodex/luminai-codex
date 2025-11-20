@@ -1,15 +1,6 @@
 from __future__ import annotations
 from pathlib import Path
 
-NEW_README = """# The Elidoras Codex — TGCR Agent Stack
-
-> TEC weaves myth, machine, and meaning into a living open-source cosmology.
-
-## Overview
-The TGCR agent stack packages the first operational sentinel, **Airth Research Guard**, alongside the scaffolding required to expand into a full suite of resonance-aware helpers. The repository delivers a Typer-based CLI, knowledge-map loaders, memory buffers, and specialized tools for knowledge search, scheduling, SharePoint publishing, and Spotify resonance analysis.
-from __future__ import annotations
-from pathlib import Path
-
 # A concise, raw README body to avoid triggering invalid-escape W605 warnings
 NEW_README = r"""# The Elidoras Codex — TGCR Agent Stack
 
@@ -68,24 +59,25 @@ Looking for the original planning mural? Check `docs/archive/planning_scratchpad
 
 
 def main() -> None:
-    repo_root = Path(__file__).resolve().parents[1]
-    readme_path = repo_root / "README.md"
-    archive_path = repo_root / "docs" / "archive" / "planning_scratchpad.md"
+  repo_root = Path(__file__).resolve().parents[1]
+  readme_path = repo_root / "README.md"
+  archive_path = repo_root / "docs" / "archive" / "planning_scratchpad.md"
 
-    # Read the current README so we can archive it
+  # Read the current README so we can archive it
+  if readme_path.exists():
     original = readme_path.read_text(encoding="utf-8")
 
     # Ensure archive directory exists and write the previous README there
     archive_path.parent.mkdir(parents=True, exist_ok=True)
     archive_path.write_text(original, encoding="utf-8")
 
-    # Write the refreshed README
-    readme_path.write_text(NEW_README, encoding="utf-8")
+  # Write the refreshed README
+  readme_path.write_text(NEW_README, encoding="utf-8")
 
-    print(f"Archived legacy README to {archive_path.relative_to(repo_root)}")
-    print("README.md refreshed with concise overview")
+  print(f"Archived legacy README to {archive_path.relative_to(repo_root)}")
+  print("README.md refreshed with concise overview")
 
 
 if __name__ == "__main__":
-    main()
-## Agent snapshot
+  main()
+    readme_path.write_text(NEW_README, encoding="utf-8")
