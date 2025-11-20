@@ -12,7 +12,7 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 from tec_tgcr.data_ingestion import (
-    CopilotContext,
+    CODEXContext,
     FoldContextIngestion,
     GitHubIssue,
     ProjectItem,
@@ -192,7 +192,7 @@ class TestFoldContextIngestion:
 
         context = self.ingestion.fetch_context()
 
-        assert isinstance(context, CopilotContext)
+        assert isinstance(context, CODEXContext)
         assert context.github["issue_count"] == 1
         assert context.github["pr_count"] == 1
         assert context.github["p0_issues"] == 1
@@ -204,7 +204,7 @@ class TestFoldContextIngestion:
         with tempfile.TemporaryDirectory() as tmpdir:
             output_path = Path(tmpdir) / "context.json"
 
-            context = CopilotContext(
+            context = CODEXContext(
                 timestamp="2025-01-01T00:00:00Z",
                 summary="Test summary",
                 github={
@@ -261,7 +261,7 @@ class TestFoldContextIngestion:
 
     def test_generate_summary(self):
         """Test context summary generation."""
-        context = CopilotContext(
+        context = CODEXContext(
             timestamp="2025-01-01T00:00:00Z",
             summary="",
             github={
@@ -287,12 +287,12 @@ class TestFoldContextIngestion:
         assert "blocked" in summary
 
 
-class TestCopilotContext:
-    """Test the CopilotContext model."""
+class TestCODEXContext:
+    """Test the CODEXContext model."""
 
     def test_context_creation(self):
-        """Create a copilot context."""
-        context = CopilotContext(
+        """Create a CODEX context."""
+        context = CODEXContext(
             timestamp="2025-01-01T00:00:00Z",
             summary="Test summary",
             github={"issue_count": 5},
@@ -305,7 +305,7 @@ class TestCopilotContext:
 
     def test_context_serialization(self):
         """Serialize context to dict."""
-        context = CopilotContext(
+        context = CODEXContext(
             timestamp="2025-01-01T00:00:00Z",
             summary="Test",
             github={},

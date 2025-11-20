@@ -65,6 +65,7 @@ python -m src.interfaces.cli
 - `docs/` — Documentation (architecture, deployment, user guides)
 - `scripts/` — Automation scripts (deployment, secrets sync, maintenance)
 - `config/` — Configuration files (dev, staging, prod environments)
+
 ## Key Files
 
 - `docs/architecture/LUMINAI_TECHNICAL_INFRASTRUCTURE_REQUIREMENTS.md` — Architecture & backend design

@@ -13,7 +13,7 @@ import asyncio
 import hashlib
 import json
 from datetime import datetime
-from typing import Dict, List, Optional, Any, AsyncGenerator, Union
+from typing import Dict, List, Optional, Any
 from pathlib import Path
 from dataclasses import dataclass
 from enum import Enum
@@ -516,8 +516,8 @@ async def main():
 
 
 # Additional classes for test compatibility
-class CopilotContext(BaseModel):
-    """Context information for Copilot operations used by tests."""
+class CODEXContext(BaseModel):
+    """Context information for CODEX operations used by tests."""
 
     timestamp: str
     summary: str
@@ -580,7 +580,7 @@ class FoldContextIngestion:
                 # Skip PRs which also appear in issues endpoint
                 if "pull_request" in it:
                     continue
-                labels = [l["name"] for l in it.get("labels", [])]
+                labels = [lbl["name"] for lbl in it.get("labels", [])]
                 issues.append(
                     GitHubIssue(
                         number=it.get("number", 0),
@@ -622,7 +622,7 @@ class FoldContextIngestion:
                         "state": pr.get("state", "open"),
                         "created_at": pr.get("created_at"),
                         "updated_at": pr.get("updated_at"),
-                        "labels": [l.get("name") for l in pr.get("labels", [])],
+                        "labels": [lbl.get("name") for lbl in pr.get("labels", [])],
                     }
                 )
             return prs
@@ -666,7 +666,7 @@ class FoldContextIngestion:
         return {"luminai": {"role": "Sentinel"}}
 
     # --------------------- Context ops ---------------------
-    def fetch_context(self) -> CopilotContext:
+    def fetch_context(self) -> CODEXContext:
         issues = self.fetch_issues()
         prs = self.fetch_pull_requests()
         commits = self.fetch_recent_commits()
@@ -688,7 +688,7 @@ class FoldContextIngestion:
             ),
         }
 
-        context = CopilotContext(
+        context = CODEXContext(
             timestamp=datetime.utcnow().isoformat(),
             summary="",
             github=github,
@@ -701,7 +701,7 @@ class FoldContextIngestion:
         context.summary = self.generate_summary(context)
         return context
 
-    def save_context(self, context: CopilotContext, output_path: Path) -> Path:
+    def save_context(self, context: CODEXContext, output_path: Path) -> Path:
         output_path.parent.mkdir(parents=True, exist_ok=True)
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(context.model_dump(), f, indent=2)
@@ -718,7 +718,7 @@ class FoldContextIngestion:
                 persona_activity[prefix] = persona_activity.get(prefix, 0) + 1
         return {"total_recent": len(commits), "persona_activity": persona_activity}
 
-    def generate_summary(self, context: CopilotContext) -> str:
+    def generate_summary(self, context: CODEXContext) -> str:
         ready = context.project.get("ready", 0)
         blocked = context.project.get("blocked", 0)
         active = context.github.get("pr_count", 0) + context.github.get(

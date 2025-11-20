@@ -19,7 +19,12 @@ with open("ai-workflow/prompt_templates.py") as template_file:
 
 def generate_sample_prompts():
     """Generate sample prompts for immediate use"""
-    generator = LuminAIPromptGenerator()
+    generator_cls = globals().get("LuminAIPromptGenerator")
+    if generator_cls is None:
+        print("Warning: LuminAIPromptGenerator not found in ai-workflow/prompt_templates.py. Skipping generation.")
+        return
+
+    generator = generator_cls()
 
     print("🌟 Generating LuminAI Character Prompts...\n")
 
