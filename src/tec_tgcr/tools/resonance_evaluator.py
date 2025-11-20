@@ -4,11 +4,9 @@ Resonance Evaluator Tools
 This module provides tools for evaluating resonance systems,
 AI model performance, and multi-LLM collaboration effectiveness.
 """
-
-import json
 import asyncio
 from datetime import datetime
-from typing import Dict, List, Optional, Any, Tuple
+from typing import Dict, List, Any
 from dataclasses import dataclass, asdict
 from enum import Enum
 import statistics
@@ -678,7 +676,7 @@ async def main():
 
     # Get summary
     summary = evaluator.get_evaluation_summary()
-    print(f"\n📊 Evaluation Summary:")
+    print("\n📊 Evaluation Summary:")
     print(f"Total evaluations: {summary['total_evaluations']}")
     print(f"Average score: {summary['average_score']:.3f}")
 
