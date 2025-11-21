@@ -19,6 +19,8 @@ related_docs: []
 
 Welcome to the LuminAI Codex deployment hub. This folder contains everything needed to configure, deploy, and maintain the system.
 
+> NOTE: A unified deployment entry has been added: `UNIFIED_PLATFORM_BUILD.md` — a prescriptive local & CI build guide (includes CLI integration). See `UNIFIED_PLATFORM_BUILD.md` in this folder.
+
 ## 📂 Organization
 
 ```

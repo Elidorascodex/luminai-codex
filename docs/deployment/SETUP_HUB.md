@@ -32,6 +32,7 @@ This folder contains **deployment, configuration, and setup documentation** orga
 ```
 deployment/
 ├── INDEX.md                 # 👈 Main hub (comprehensive overview)
+├── DEPLOYMENT_MASTER.md     # Unified deployment master (summary + quick links)
 ├── SETUP_HUB.md             # This file (role-based navigation)
 ├── guides/                  # Step-by-step implementation guides
 │   ├── README.md
@@ -54,14 +55,16 @@ date_created: 2025-11-16
 date_updated: 2025-11-16
 status: draft
 approvers:
-  - persona: Ely
+
+- persona: Ely
     role: Engineering Steward
 owner_checklist:
-  - [ ] Read and understood
-  - [ ] Cross-linked in TEC_HUB.md and STRUCTURE.md
-  - [ ] Tested commands/steps (if procedural)
-  - [ ] Old version archived if replaced
+- [ ] Read and understood
+- [ ] Cross-linked in TEC_HUB.md and STRUCTURE.md
+- [ ] Tested commands/steps (if procedural)
+- [ ] Old version archived if replaced
 tags: [deployment]
+
 ---
 
 ## � Quick Start by Role
