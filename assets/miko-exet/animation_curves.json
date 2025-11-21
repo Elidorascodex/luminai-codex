@@ -1,0 +1,4 @@
+{
+  "breath_catch": { "in": 0.12, "hold": 0.08, "out": 0.15 },
+  "finger_emphasis": { "amplitude": 0.04, "duration": 0.22 }
+}
