@@ -7,6 +7,7 @@
 [![Status](https://img.shields.io/badge/status-v0.1.0--alpha-success)](./docs/ALPHA_RELEASE_NOTES.md)
 [![CodeQL Analysis](https://github.com/TEC-The-ELidoras-Codex/luminai-codex/actions/workflows/codeql.yml/badge.svg)](https://github.com/TEC-The-ELidoras-Codex/luminai-codex/actions/workflows/codeql.yml)
 [![Security & Tests](https://github.com/TEC-The-ELidoras-Codex/luminai-codex/actions/workflows/security-and-tests.yml/badge.svg)](https://github.com/TEC-The-ELidoras-Codex/luminai-codex/actions/workflows/security-and-tests.yml)
+[![CLI Status](https://img.shields.io/badge/CLI-ready-00d5c4?logo=gnu-bash&logoColor=white)](./cli/README.md)
 [![Resonance](https://img.shields.io/badge/resonance-0.81-blueviolet)](#)
 
 ---
@@ -16,6 +17,8 @@
 **v0.1.0-alpha is live** — Platform foundation complete with ethics covenants, multi-LLM orchestration, and production observability.
 
 👉 **[Read the Release Notes](./docs/ALPHA_RELEASE_NOTES.md)** | **[View Changelog](./CHANGELOG.md)** | **[Quick Start](#-quick-start)**
+
+→ Continue: [Deployment master & quick links](./docs/deployment/DEPLOYMENT_MASTER.md)
 
 ---
 
