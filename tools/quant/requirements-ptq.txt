@@ -1,0 +1,8 @@
+# Minimal requirements for PTQ experiments
+torch>=2.0.0
+transformers>=4.30.0
+optimum>=1.10.0
+numpy
+scipy
+# Optional, for 4-bit/8-bit runtimes
+bitsandbytes
