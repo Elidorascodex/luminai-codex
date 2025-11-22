@@ -10,7 +10,7 @@ Resonance Axioms (System Laws):
 """
 
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone
 from enum import Enum
 from typing import List, Optional, Literal, Dict, Any
 
@@ -77,7 +77,7 @@ class ConsentState:
     emotions: list[EmotionState] = field(default_factory=list)  # 0-3 emotions
     meta: list[MetaSignal] = field(default_factory=list)  # 0-2 meta signals
     safety: Optional[SafetySignal] = None
-    timestamp: str = field(default_factory=lambda: datetime.utcnow().isoformat())
+    timestamp: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
     context: Optional[str] = None
 
 

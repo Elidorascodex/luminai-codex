@@ -22,6 +22,7 @@ Purpose: Produce a photoreal, emotionally faithful persona bundle and a repeatab
 ## 2) Studio & photorealism directives
 
 Lighting
+
 - Key: 5150–5300K (neutral to slightly warm). Use 2:1 key-to-fill ratio.
 - Fill: 4800–5000K, slightly cooler than key to preserve skin tonal neutrality.
 - Back/Hair: low-intensity rim/hair light at ~30–40% of key to separate braid from background without strong rim specularity.
@@ -29,11 +30,13 @@ Lighting
 - Background: light‑grey seamless with micro-gradient (darker at floor line, slightly brighter mid-height) and faint ground reflection to imply studio depth.
 
 Camera & optics
+
 - Focal length: 50–85mm equivalent; aperture f/4–f/5.6 for balanced subject isolation and knit detail.
 - Framing: eye-level, waist-to-head or three-quarter, slow linear zoom-out (stabilized parallax).
 - Processing: reduce micro‑sharpening; avoid aggressive denoise that flattens pores and iris detail.
 
 Material & diffusion notes
+
 - Use anisotropic highlights on hair/braid fibers; add micro-frizz and flyaways for realism.
 - Ensure ribbed knit reacts to light with directional micro-shadowing; simulate fabric compression at elbow and waist.
 
@@ -42,20 +45,24 @@ Material & diffusion notes
 ## 3) Character detail (render / asset guidance)
 
 Hair & color
+
 - Base: neutral platinum-silver anchor.
 - Tint: localize faint lilac to underlayers and a few loose face‑framing strands; tint density <10% overall to avoid synthetic look.
 - Geometry: natural braid weight, realistic gravity; add stray fibers and anisotropic sheen.
 
 Eyes (heterochromia)
+
 - Left (violet): vivid but natural—preserve iris crypts, radial striations, limbal ring. Avoid posterization.
 - Right (silver-blue): non-emissive; reflect catchlights from key/fill. Keep internal specular subtle and physically plausible.
 - Micro-movement: subtle saccades, half-blink before focal gaze; natural blink cadence.
 
 Skin & tattoos
+
 - Skin: preserved pore structure, faint micro-vascular undertones; keep micro-roughness to avoid digital plasticity.
 - Tattoos: feather ink edges, slight desaturation where fabric compresses; ensure tattoos move with skin/parallax and do not slide across frames.
 
 Accessories & attire
+
 - Glasses: thin black rims; simulate lens refraction and accurate catchlights; limit lens distortion.
 - Septum & plugs: low-gloss metal with micro-scratches; plugs flush to lobes with minimal shadowing.
 - Tights: matte opacity, seam placement and slight shear at knee flex; add wrinkle memory at ankle.
@@ -65,16 +72,20 @@ Accessories & attire
 ## 4) Animation & stage presence
 
 Primary gestures
+
 - Two-finger emphasis: small amplitude, timed to beat/lyric pivot; motion stays inside chest‑to‑face space.
 - Breath-catch: micro inhalation (sternum rise, clavicle lift, slight nostril flare) and soft jaw-set—no full gasp.
 
 Stance & weight
+
 - Relaxed A-pose with gentle left→right weight shift; tiny ankle adjustments to signal presence without overt choreography.
 
 Micro-expressions
+
 - Micro brow release, 2–3% smile decay after gaze: reads “self-conscious yet resolved.”
 
 Camera motion
+
 - Slow, linear zoom-out; stabilized motion curves; avoid wobble and strong dolly feel.
 
 ---
@@ -82,22 +93,27 @@ Camera motion
 ## 5) QC plan — iterative phases (tight checklist)
 
 Phase 1 — Baseline calibration (lighting, lens, diffuse)
+
 - Implement temp/ratio targets, hair light, negative fill.
 - QC: check speculars, shadow softness, background gradient, and overall skin sheen.
 
 Phase 2 — Character polish (hair, eyes, tattoos)
+
 - Apply lilac mask, add flyaways, tune anisotropic highlights.
 - QC: braid silhouette checks, iris striation fidelity, tattoo edge feathering.
 
 Phase 3 — Animation subtlety (timing & micro-movement)
+
 - Sync two-finger emphasis to beat; implement breath-catch and gaze cadence.
 - QC: frame-by-frame motion review, clavicle/shoulder micro‑movement, blink cadence.
 
 Phase 4 — Final realism gate (color, artifacts)
+
 - Color pass (skin undertones, eye fidelity); artifact audit for plastic sheen, emissive eyes, sticker tattoos.
 - QC: side-by-side with reference images; annotated pass/fail checklist.
 
 Phase 5 — Sign-off & versioning
+
 - Save LUTs, light presets, tint masks, tattoo blend maps, animation curves. Repro test in a fresh scene instance.
 
 ---
@@ -109,6 +125,7 @@ Phase 5 — Sign-off & versioning
 - Governance: include an ethics/consent checklist for persona artifacts (in `docs/operational/`).
 
 Cross-links (to be created):
+
 - `docs/architecture/Avatar_Forge.md` — technical spec for the pipeline
 - `docs/manifesto/Elidoras_Codex_Manifesto.md` — voice & mission
 - `docs/operational/Miko_Exet_Bundle_README.md` — reproduction & QC checklist
@@ -129,14 +146,17 @@ Cross-links (to be created):
 ## 8) Suggested task map & priorities
 
 High priority (1–2 days)
+
 - Create Miko bundle README + placeholders (owner: author).
 - Draft Avatar Forge architecture doc (owner: engineering lead).
 
 Medium priority (3–10 days)
+
 - Produce LUTs, hair tint masks, tattoo blends; test on SDXL renders (owner: design/renderer).
 - Create animation curve library and run QC passes.
 
 Low priority (1–2 weeks)
+
 - One-click Docker pipeline (SDXL -> Wav2Lip -> FFmpeg) and CI integration.
 
 Each task should include artifacts, test instructions, and a named owner. Use commit prefixes `miko/` or `avatarforge/`.
@@ -148,4 +168,3 @@ Each task should include artifacts, test instructions, and a named owner. Use co
 This file was restructured from interview/conversation notes and consolidates both the design intent (Miko Exet) and high-level platform desires for the Elidoras Codex project. It is intentionally prescriptive to allow engineering and creative teams to work from a single, auditable spec.
 
 If you approve, I will create the three stub docs and placeholder assets and commit them to `feat/clean-deploy-links`.
-

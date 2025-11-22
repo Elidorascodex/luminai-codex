@@ -1,9 +1,12 @@
 {
   "dependencies": {
-    "dotenv": "^17.2.3",
     "@opentelemetry/api": "^1.8.0",
     "@opentelemetry/auto-instrumentations-node": "^0.52.1",
     "@opentelemetry/exporter-otlp-grpc": "*",
-    "@opentelemetry/sdk-node": "^0.52.1"
+    "@opentelemetry/sdk-node": "^0.52.1",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.9.4"
   }
 }

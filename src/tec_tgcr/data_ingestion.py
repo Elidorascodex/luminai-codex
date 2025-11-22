@@ -12,7 +12,7 @@ This module handles ingestion of various data sources for the AI system:
 import asyncio
 import hashlib
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, List, Optional, Any, AsyncGenerator, Union
 from pathlib import Path
 from dataclasses import dataclass
@@ -104,8 +104,8 @@ class DataIngestionEngine:
             source_type=SourceType.FILE,
             source_path=file_path,
             status=ProcessingStatus.PENDING,
-            created_at=datetime.utcnow(),
-            updated_at=datetime.utcnow(),
+            created_at=datetime.now(timezone.utc),
+            updated_at=datetime.now(timezone.utc),
             metadata={"original_path": file_path},
         )
 
@@ -139,8 +139,8 @@ class DataIngestionEngine:
             source_type=SourceType.URL,
             source_path=url,
             status=ProcessingStatus.PENDING,
-            created_at=datetime.utcnow(),
-            updated_at=datetime.utcnow(),
+            created_at=datetime.now(timezone.utc),
+            updated_at=datetime.now(timezone.utc),
             metadata={"url": url},
         )
 
@@ -177,8 +177,8 @@ class DataIngestionEngine:
             source_type=SourceType.TEXT,
             source_path=source_name,
             status=ProcessingStatus.PENDING,
-            created_at=datetime.utcnow(),
-            updated_at=datetime.utcnow(),
+            created_at=datetime.now(timezone.utc),
+            updated_at=datetime.now(timezone.utc),
             metadata={"source_name": source_name, "text_length": len(text)},
         )
 
@@ -189,7 +189,7 @@ class DataIngestionEngine:
         except Exception as e:
             job.status = ProcessingStatus.FAILED
             job.error_message = str(e)
-            job.updated_at = datetime.utcnow()
+            job.updated_at = datetime.now(timezone.utc)
 
         return job
 
@@ -214,7 +214,7 @@ class DataIngestionEngine:
         if job_id in self.active_jobs:
             job = self.active_jobs[job_id]
             job.status = ProcessingStatus.CANCELLED
-            job.updated_at = datetime.utcnow()
+            job.updated_at = datetime.now(timezone.utc)
             return True
         return False
 

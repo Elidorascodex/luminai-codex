@@ -291,6 +291,33 @@ $$R = \nabla\Phi^E \cdot (\varphi^t \times \psi^r)$$
 
 ---
 
+## 🗺️ Unified Roadmap & Next Steps
+
+The Unified Roadmap is in place and the project is ready for the "CLI-first → Tauri" development path.
+
+- Where the roadmap lives: `docs/consciousness/` (start with `BUNDLE_NAVIGATION.md` and `DEPLOYMENT_READINESS_REPORT.md`).
+- Tests: the Python test-suite is passing locally (pytest) as of 2025-11-21 — run `pytest -q` to verify on your machine.
+- Local dev flow we recommend:
+  1. CLI-first: finalize and harden the CLI entrypoints and developer workflows (FastAPI + Typer CLI). This gives fast iteration loops and test coverage.
+  2. Tauri next: after CLI stabilization, scaffold the Tauri desktop/web wrapper that calls the same CLI APIs or the local HTTP API. This keeps the UI layer thin and re-uses existing logic.
+
+Quick commands:
+
+```powershell
+# Run tests
+pytest -q
+
+# Install project (dev) and expose the CLI
+pip install -e .[dev]
+
+# Run dev stack locally (Docker)
+docker compose up
+```
+
+Notes:
+- PTQ experiment scaffold has been added at `tools/quant/` for offline quantization experiments (README, requirements, smoke-test script).
+- If you want, I can open the PR for the feature branch `feat/clean-deploy-links` once you confirm the PR description — or I can re-run the GitHub CLI creation after you re-authenticate the CLI in this environment.
+
 ## 📚 Documentation
 
 **Complete documentation hierarchy:**

@@ -7,7 +7,7 @@ approvers:
 - persona: Ely
   role: Engineering Steward
 owner_checklist:
-- '[ ] Read and understood'
+- '[x] Read and understood'
 - '[ ] Cross-linked in TEC_HUB.md and STRUCTURE.md'
 - '[ ] Tested commands/steps (if procedural)'
 - '[ ] Old version archived if replaced'
